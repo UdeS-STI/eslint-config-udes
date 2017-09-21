@@ -1,11 +1,22 @@
 {
   "name": "eslint-config-udes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint shareable config for the UdeS JavaScript style guide",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "npm run format:js && npm run format:json",
+    "format:js": "eslint . --ext js,html --ignore-path .gitignore --fix",
+    "format:json": "eslint . --ext .json --ignore-path .gitignore --fix",
+    "lint": "npm run lint:js && npm run lint:json",
+    "lint:js": "eslint . --ext js,html --ignore-path .gitignore",
+    "lint:json": "eslint . --ext .json --ignore-path .gitignore"
   },
+  "pre-commit": [
+    "lint"
+  ],
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UdeS-STI/eslint-config-udes.git"
@@ -41,15 +52,16 @@
   },
   "homepage": "https://github.com/UdeS-STI/eslint-config-udes#readme",
   "peerDependencies": {
-    "eslint": ">=4.7.1",
-    "eslint-config-google": ">=0.9.1",
-    "eslint-plugin-html": ">=3.2.2",
-    "eslint-plugin-json": ">=1.2.0"
+    "eslint": "^4.7.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-html": "^3.2.2",
+    "eslint-plugin-json": "^1.2.0"
   },
   "dependencies": {
     "eslint": "^4.7.1",
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-html": "^3.2.2",
-    "eslint-plugin-json": "^1.2.0"
+    "eslint-plugin-json": "^1.2.0",
+    "pre-commit": "^1.1.3"
   }
 }

@@ -1,20 +1,21 @@
 module.exports = {
-  extends: ["google"],
+  extends: ['google'],
   parserOptions: {
-    ecmaVersion: 6
+    ecmaVersion: 6,
   },
   env: {
-    browser: true
+    browser: true,
+    es6: true,
   },
   plugins: [
-    "html",
-    "json"
+    'html',
+    'json',
   ],
   rules: {
-    "new-cap": ["error", {capIsNewExceptions: ["Polymer"]}]
+    'new-cap': ['error', {capIsNewExceptions: ['Polymer']}],
   },
   globals: {
     UdeS: true,
-    Polymer: true
-  }
+    Polymer: true,
+  },
 };
