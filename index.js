@@ -12,7 +12,10 @@ module.exports = {
     'json',
   ],
   rules: {
-    'new-cap': ['error', {capIsNewExceptions: ['Polymer']}],
+    'new-cap': ['error', {
+      capIsNewExceptions: ['Polymer'],
+      capIsNewExceptionPattern: '^(UdeS|Polymer)',
+    }],
   },
   globals: {
     UdeS: true,
