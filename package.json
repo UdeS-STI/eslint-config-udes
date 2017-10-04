@@ -43,25 +43,22 @@
     "verify"
   ],
   "author": "Université de Sherbrooke",
-  "engines": {
-    "node": ">=0.10.0"
-  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/UdeS-STI/eslint-config-udes/issues"
   },
   "homepage": "https://github.com/UdeS-STI/eslint-config-udes#readme",
-  "peerDependencies": {
-    "eslint": "^4.7.1",
-    "eslint-config-google": "^0.9.1",
-    "eslint-plugin-html": "^3.2.2",
-    "eslint-plugin-json": "^1.2.0"
+  "devDependencies": {
+    "pre-commit": "^1.1.3"
   },
   "dependencies": {
     "eslint": "^4.7.1",
-    "eslint-config-google": "^0.9.1",
     "eslint-plugin-html": "^3.2.2",
     "eslint-plugin-json": "^1.2.0",
-    "pre-commit": "^1.1.3"
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
