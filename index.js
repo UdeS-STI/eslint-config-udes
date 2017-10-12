@@ -18,11 +18,12 @@ module.exports = {
       'error', {
         'require': {
           'FunctionDeclaration': true,
-          'MethodDefinition': true,
+          'MethodDefinition': false,
           'ClassDeclaration': true,
         },
-      }],
-    'valid-jsdoc': 'error',
+      },
+    ],
+    'valid-jsdoc': ['error', { requireReturn: false }],
     'new-cap': [
       'error', {
         capIsNewExceptions: ['Polymer'],
