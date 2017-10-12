@@ -16,13 +16,13 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'require-jsdoc': [
       'error', {
-        'require': {
-          'FunctionDeclaration': true,
-          'MethodDefinition': true,
-          'ClassDeclaration': true,
-        },
-      }],
-    'valid-jsdoc': 'error',
+      'require': {
+        'FunctionDeclaration': true,
+        'MethodDefinition': false,
+        'ClassDeclaration': true,
+      },
+    }],
+    'valid-jsdoc': ['error', { requireReturn: false }],
     'new-cap': [
       'error', {
         capIsNewExceptions: ['Polymer'],
