@@ -14,6 +14,7 @@ module.exports = {
   ],
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
+    'no-console': 'warn',
     'require-jsdoc': [
       'error', {
         'require': {
