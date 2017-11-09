@@ -13,6 +13,7 @@ module.exports = {
     'json',
   ],
   rules: {
+    'max-len': ['error', 120],
     'comma-dangle': ['error', 'always-multiline'],
     'no-console': 'warn',
     'require-jsdoc': [
@@ -24,7 +25,7 @@ module.exports = {
         },
       },
     ],
-    'valid-jsdoc': ['error', { requireReturn: false }],
+    'valid-jsdoc': ['error', {requireReturn: false}],
     'new-cap': [
       'error', {
         capIsNewExceptions: ['Polymer'],
