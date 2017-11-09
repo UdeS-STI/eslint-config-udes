@@ -1,4 +1,6 @@
-# eslint-config-udes 
+# eslint-config-udes
+
+[![CircleCI](https://circleci.com/gh/UdeS-STI/eslint-config-udes.svg?style=svg)](https://circleci.com/gh/UdeS-STI/eslint-config-udes)
 [![npm](https://img.shields.io/npm/v/eslint-config-udes.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-udes)
 
 ESLint shareable config for the UdeS JavaScript style guide
