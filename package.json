@@ -49,16 +49,16 @@
   },
   "homepage": "https://github.com/UdeS-STI/eslint-config-udes#readme",
   "devDependencies": {
-    "pre-commit": "^1.1.3"
+    "pre-commit": "^1.2.2"
   },
   "dependencies": {
-    "eslint": "^4.7.1",
+    "eslint": "^4.10.0",
     "eslint-plugin-html": "^3.2.2",
     "eslint-plugin-json": "^1.2.0",
     "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.2.0",
-    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1"
   }
 }
