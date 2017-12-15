@@ -1,19 +1,28 @@
 module.exports = {
   extends: ['standard'],
+  
   parserOptions: {
     // Enables ES6/ES2015 syntax
     ecmaVersion: 6,
   },
+  
+  // Defines global variables that are predefined
   env: {
+    // Browser global variables
     browser: true,
-    // Enable new ES6 globals, such as Set
+    
+    // Enable ES6 features (automatically sets the ecmaVersion parser option to 6)
     es6: true,
+    
+    // Node.js global variables and Node.js scoping
     node: true,
   },
+  
   plugins: [
     'html',
     'json',
   ],
+  
   rules: {
     'max-len': ['error', 120],
     'comma-dangle': ['error', 'always-multiline'],
