@@ -1,10 +1,12 @@
 module.exports = {
   extends: ['standard'],
   parserOptions: {
+    // Enables ES6/ES2015 syntax
     ecmaVersion: 6,
   },
   env: {
     browser: true,
+    // Enable new ES6 globals, such as Set
     es6: true,
     node: true,
   },
