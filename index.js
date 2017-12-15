@@ -1,5 +1,6 @@
 module.exports = {
-  extends: ['standard'],
+  // Extends the JavaScript Standard Style
+  extends: ['eslint-config-standard'],
   
   parserOptions: {
     // Enables ES6/ES2015 syntax
