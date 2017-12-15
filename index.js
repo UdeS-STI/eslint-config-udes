@@ -21,7 +21,10 @@ module.exports = {
   
   // Use of third-party plugins
   plugins: [
+    // Allows linting and fixing inline scripts contained in HTML files
     'eslint-plugin-html',
+    
+    // Lint JSON files
     'eslint-plugin-json',
   ],
   
