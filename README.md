@@ -13,7 +13,7 @@ $ npm i -D eslint-config-udes
 
 ## Usage
 - Add the extends attribute to your `.eslintrc.js`
-```json
+```javacript
 module.exports = {
   // Extends the UdeS ESLint config
   extends: 'eslint-config-udes',
