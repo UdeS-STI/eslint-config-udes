@@ -36,6 +36,16 @@ module.exports = {
     // Enforce a maximum line length of 120 characters (instead of 80 from Standard) [See pull request #4]
     'max-len': ['error', 120],
     
+    // Require constructor names to begin with a capital letter
+    'new-cap': [
+      'error', {
+        // Allows specified uppercase-started function names to be called without the new operator
+        capIsNewExceptions: ['Polymer'],
+        
+        // Allows any uppercase-started function names that match the specified regex pattern to be called without the new operator
+        capIsNewExceptionPattern: '^(UdeS|Polymer)',
+      }],
+    
     // Disallow the use of console [See pull request #2]
     'no-console': 'warn',
     
@@ -56,16 +66,11 @@ module.exports = {
       },
     ],
     
+    // Enforce valid JSDoc comments
     'valid-jsdoc': ['error', {
-      // [See pull request #1]
+      // If and only if the function or method has a return statement [See pull request #1]
       requireReturn: false
     }],
-    
-    'new-cap': [
-      'error', {
-        capIsNewExceptions: ['Polymer'],
-        capIsNewExceptionPattern: '^(UdeS|Polymer)',
-      }],
   },
   
   // Variables that are accessed but not defined within the same file
