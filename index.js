@@ -43,8 +43,13 @@ module.exports = {
         capIsNewExceptionPattern: '^(UdeS|Polymer)',
       }],
   },
+  
+  // Variables that are accessed but not defined within the same file
   globals: {
+    // UdeS components and global scoped variables
     UdeS: true,
-    Polymer: true,
+    
+    // UdeS components and global scoped variables (read-only)
+    Polymer: false,
   },
 }
