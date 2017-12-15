@@ -78,7 +78,7 @@ module.exports = {
     // UdeS components and global scoped variables
     UdeS: true,
     
-    // UdeS components and global scoped variables (read-only)
-    Polymer: false,
+    // UdeS components and global scoped variables
+    Polymer: true,
   },
 }
