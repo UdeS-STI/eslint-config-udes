@@ -18,11 +18,13 @@ module.exports = {
     node: true,
   },
   
+  // Use of third-party plugins
   plugins: [
-    'html',
-    'json',
+    'eslint-plugin-html',
+    'eslint-plugin-json',
   ],
   
+  // Custom rules
   rules: {
     'max-len': ['error', 120],
     'comma-dangle': ['error', 'always-multiline'],
