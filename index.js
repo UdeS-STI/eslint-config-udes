@@ -30,19 +30,35 @@ module.exports = {
   
   // Custom rules
   rules: {
-    'max-len': ['error', 120],
+    // Requires trailing commas when the last element or property is in a different line than the closing ] or }
     'comma-dangle': ['error', 'always-multiline'],
+    
+    // Enforce a maximum line length of 120 characters (instead of 80 from Standard)
+    'max-len': ['error', 120],
+    
+    // Disallow the use of console
     'no-console': 'warn',
+    
+    // Require JSDoc comments
     'require-jsdoc': [
       'error', {
+        // Requires JSDoc comments for the specified nodes
         'require': {
-          'FunctionDeclaration': true,
-          'MethodDefinition': false,
+          // Class Foo
           'ClassDeclaration': true,
+          
+          // function foo() {}
+          'FunctionDeclaration': true,
+          
+          'MethodDefinition': false,
         },
       },
     ],
-    'valid-jsdoc': ['error', {requireReturn: false}],
+    
+    'valid-jsdoc': ['error', {
+      requireReturn: false
+    }],
+    
     'new-cap': [
       'error', {
         capIsNewExceptions: ['Polymer'],
