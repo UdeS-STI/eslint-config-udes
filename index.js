@@ -33,10 +33,10 @@ module.exports = {
     // Requires trailing commas when the last element or property is in a different line than the closing ] or }
     'comma-dangle': ['error', 'always-multiline'],
     
-    // Enforce a maximum line length of 120 characters (instead of 80 from Standard)
+    // Enforce a maximum line length of 120 characters (instead of 80 from Standard) [See pull request #4]
     'max-len': ['error', 120],
     
-    // Disallow the use of console
+    // Disallow the use of console [See pull request #2]
     'no-console': 'warn',
     
     // Require JSDoc comments
@@ -50,12 +50,14 @@ module.exports = {
           // function foo() {}
           'FunctionDeclaration': true,
           
+          // constructor() {} [See pull request #1]
           'MethodDefinition': false,
         },
       },
     ],
     
     'valid-jsdoc': ['error', {
+      // [See pull request #1]
       requireReturn: false
     }],
     
