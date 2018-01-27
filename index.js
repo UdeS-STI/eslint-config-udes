@@ -31,7 +31,16 @@ module.exports = {
   // Custom rules
   rules: {
     // Requires trailing commas when the last element or property is in a different line than the closing ] or }
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': ['error', {
+      'arrays': 'always-multiline', // let [a,] = [1,]
+      'exports': 'always-multiline', // export {a,}
+
+      // Should only be enabled when linting ECMAScript 2017 (ES8) or higher
+      'functions': 'ignore', // (function(a,){ })(b,)
+
+      'imports': 'always-multiline', // import {a,} from "foo"
+      'objects': 'always-multiline', // let {a,} = {a: 1}
+    }],
 
     // Enforce a maximum line length of 120 characters (instead of 80 from Standard) [See pull request #4]
     'max-len': ['error', 120],
