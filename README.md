@@ -1,7 +1,6 @@
 # eslint-config-udes
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/UdeS-STI/eslint-config-udes.svg)](https://greenkeeper.io/)
-
 [![CircleCI](https://circleci.com/gh/UdeS-STI/eslint-config-udes.svg?style=svg)](https://circleci.com/gh/UdeS-STI/eslint-config-udes)
 [![npm](https://img.shields.io/npm/v/eslint-config-udes.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-udes)
 
@@ -13,10 +12,14 @@ $ npm i -D eslint-config-udes
 ```
 
 ## Usage
-- Add the extends attribute to your `.eslintrc.json`
-```json
-{
-  "extends": "eslint-config-udes"
+- Add the extends attribute to your `.eslintrc.js`
+```javacript
+module.exports = {
+  // Extends the UdeS ESLint config
+  extends: 'eslint-config-udes',
+  
+  // Limit ESLint to a specific project
+  root: true
 }
 ```
 - Add the wanted scripts to your `package.json`
