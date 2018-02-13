@@ -1,21 +1,25 @@
 {
   "name": "eslint-config-udes",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "ESLint shareable config for the UdeS JavaScript style guide",
   "main": "index.js",
   "scripts": {
-    "format": "npm run format:js && npm run format:json",
-    "format:js": "eslint . --ext js,html --ignore-path .gitignore --fix",
-    "format:json": "eslint . --ext .json --ignore-path .gitignore --fix",
-    "lint": "npm run lint:js && npm run lint:json",
-    "lint:js": "eslint . --ext js,html --ignore-path .gitignore",
-    "lint:json": "eslint . --ext .json --ignore-path .gitignore"
+    "format": "npm-run-all format:*",
+    "format:js": "eslint . --ext js --fix",
+    "format:json": "eslint . --ext json --fix",
+    "format:markdown": "eslint . --ext md --fix",
+    "lint": "npm-run-all lint:*",
+    "lint:js": "eslint . --ext js",
+    "lint:json": "eslint . --ext json",
+    "lint:markdown": "eslint . --ext md"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "files": [
-    "index.js"
+    "index.js",
+    "node-8.js",
+    "polymer-2.js",
+    "polymer-2-application.js",
+    "polymer-2-element.js",
+    "react.js"
   ],
   "repository": {
     "type": "git",
@@ -49,16 +53,14 @@
   },
   "homepage": "https://github.com/UdeS-STI/eslint-config-udes#readme",
   "devDependencies": {
-    "pre-commit": "^1.2.2"
+    "npm-run-all": "^4.1.2"
   },
   "dependencies": {
-    "eslint": "^4.10.0",
-    "eslint-plugin-html": "^3.2.2",
+    "eslint": "^4.17.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-html": "^4.0.2",
     "eslint-plugin-json": "^1.2.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
+    "eslint-plugin-react": "^7.6.1"
   }
 }
