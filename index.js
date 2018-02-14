@@ -70,6 +70,9 @@ module.exports = {
     // Disallow the use of console [See pull request #2]
     'no-console': 'warn',
 
+    // Disallow this keywords outside of classes or class-like objects
+    'no-invalid-this': 'off',
+
     // enforce consistent spacing inside braces
     'object-curly-spacing': ['error', 'always'],
 
