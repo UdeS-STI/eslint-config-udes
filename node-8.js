@@ -8,6 +8,9 @@ module.exports = {
   parserOptions: {
     // Enables ES7/ES2016 syntax
     ecmaVersion: 7,
+
+    // Code is in ECMAScript modules (default: script)
+    sourceType: 'module',
   },
 
   // Defines global variables that are predefined
