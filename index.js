@@ -28,6 +28,13 @@ module.exports = {
 
   // Custom rules
   rules: {
+    // Enforces parentheses around arrow function parameters regardless of arity
+    'arrow-parens': [
+      'error', 'as-needed', {
+        // Require parens if the function body is in an instructions block
+        requireForBlockBody: true,
+      }],
+
     // Requires trailing commas when the last element or property is in a different line than the closing ] or }
     'comma-dangle': [
       'error', {
@@ -45,7 +52,11 @@ module.exports = {
     'eol-last': ['error', 'always'],
 
     // Consistent indentation style
-    'indent': ['error', 2],
+    'indent': [
+      'error', 2, {
+        // Indent case clauses with 2 spaces with respect to switch statements
+        SwitchCase: 1,
+      }],
 
     // Consistent line endings independent of operating system, VCS, or editor used across your codebase (default: unix)
     'linebreak-style': ['error', 'unix'],
@@ -58,6 +69,9 @@ module.exports = {
 
     // Disallow the use of console [See pull request #2]
     'no-console': 'warn',
+
+    // enforce consistent spacing inside braces
+    'object-curly-spacing': ['error', 'always'],
 
     // Override from Google
     // https://github.com/google/eslint-config-google/blob/394bf3c9f858b83514fdcbf23d74492e253d611f/index.js#L269-L275

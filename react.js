@@ -14,4 +14,9 @@ module.exports = {
     // Node.js global variables and Node.js scoping
     node: true,
   },
+
+  // Custom rules
+  rules: {
+    'react/jsx-uses-vars': 'error',
+  },
 };
