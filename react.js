@@ -11,6 +11,9 @@ module.exports = {
 
   // Defines global variables that are predefined
   env: {
+    // Browser global variables
+    browser: true,
+
     // Node.js global variables and Node.js scoping
     node: true,
   },
