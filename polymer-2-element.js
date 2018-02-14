@@ -26,7 +26,7 @@ module.exports = {
     // Enforce valid JSDoc comments
     'valid-jsdoc': ['error', {
       // Use @return instead of @returns
-      prefer: {returns: 'return'},
+      prefer: { returns: 'return' },
 
       // If and only if the function or method has a return statement [See pull request #1]
       requireReturn: false,
