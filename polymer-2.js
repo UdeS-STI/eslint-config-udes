@@ -5,8 +5,8 @@ module.exports = {
   ],
 
   // Defines global variables that are predefined
-  env: {		   
-    // Browser global variables		
+  env: {
+    // Browser global variables
     browser: true,
   },
 
