@@ -59,7 +59,15 @@ module.exports = {
     // Disallow the use of console [See pull request #2]
     'no-console': 'warn',
 
+    // Override from Google
+    // https://github.com/google/eslint-config-google/blob/394bf3c9f858b83514fdcbf23d74492e253d611f/index.js#L269-L275
+    'require-jsdoc': 'off',
+
     // Require or disallow semicolons instead of ASI
     'semi': ['error', 'always'],
+
+    // Override from Google
+    // https://github.com/google/eslint-config-google/blob/394bf3c9f858b83514fdcbf23d74492e253d611f/index.js#L65-L70
+    'valid-jsdoc': 'off',
   },
 };
