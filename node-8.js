@@ -6,8 +6,8 @@ module.exports = {
 
   // Supported JavaScript language options
   parserOptions: {
-    // Enables ES7/ES2016 syntax
-    ecmaVersion: 7,
+    // Enables ES8/ES2017 syntax
+    ecmaVersion: 8,
 
     // Code is in ECMAScript modules (default: script)
     sourceType: 'module',
