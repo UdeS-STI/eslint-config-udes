@@ -20,6 +20,9 @@ module.exports = {
 
   // Custom rules
   rules: {
+    'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
+    'react/no-unused-prop-types': 'error',
+    'react/require-default-props': 'error',
   },
 };
