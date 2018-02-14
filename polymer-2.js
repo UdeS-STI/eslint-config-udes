@@ -4,6 +4,12 @@ module.exports = {
     './index.js',
   ],
 
+  // Defines global variables that are predefined
+  env: {		   
+    // Browser global variables		
+    browser: true,
+  },
+
   // Use of third-party plugins
   plugins: [
     // Allows linting and fixing inline scripts contained in HTML files
