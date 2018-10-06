@@ -4,14 +4,8 @@
   "description": "ESLint shareable config for the UdeS JavaScript style guide",
   "main": "index.js",
   "scripts": {
-    "format": "npm-run-all format:*",
-    "format:js": "eslint . --ext js --fix",
-    "format:json": "eslint . --ext json --fix",
-    "format:markdown": "eslint . --ext md --fix",
-    "lint": "npm-run-all lint:*",
-    "lint:js": "eslint . --ext js",
-    "lint:json": "eslint . --ext json",
-    "lint:markdown": "eslint . --ext md"
+    "format": "eslint . --ext js,json,md --fix",
+    "lint": "eslint . --ext js,json,md"
   },
   "files": [
     "index.js",
@@ -52,15 +46,12 @@
     "url": "https://github.com/UdeS-STI/eslint-config-udes/issues"
   },
   "homepage": "https://github.com/UdeS-STI/eslint-config-udes#readme",
-  "devDependencies": {
-    "npm-run-all": "^4.1.2"
-  },
   "dependencies": {
-    "eslint": "^4.17.0",
-    "eslint-config-google": "^0.9.1",
-    "eslint-plugin-html": "^4.0.2",
-    "eslint-plugin-json": "^1.2.0",
+    "eslint": "^5.6.1",
+    "eslint-config-google": "^0.10.0",
+    "eslint-plugin-html": "^4.0.6",
+    "eslint-plugin-json": "^1.2.1",
     "eslint-plugin-markdown": "^1.0.0-beta.6",
-    "eslint-plugin-react": "^7.6.1"
+    "eslint-plugin-react": "^7.11.1"
   }
 }
