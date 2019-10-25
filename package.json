@@ -45,6 +45,7 @@
     "lint": "eslint . --ext js,json,md"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.5.1",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^1.0.1",
