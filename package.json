@@ -44,12 +44,26 @@
     "format": "eslint . --ext js,json,md --fix",
     "lint": "eslint . --ext js,json,md"
   },
+  "husky": {
+    "hooks": {
+      "post-commit": "git update-index -g",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{html,js,json}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.5.1",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^1.0.1",
     "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
     "prettier": "^1.18.2"
   },
   "peerDependencies": {
@@ -57,8 +71,8 @@
     "eslint": "^6.5.1",
     "eslint-formatter-gitlab": "^1.1.0",
     "eslint-plugin-html": "^6.0.0",
-    "eslint-plugin-lit": "^1.2.0",
     "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-lit": "^1.2.0",
     "eslint-plugin-markdown": "^1.0.1",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
