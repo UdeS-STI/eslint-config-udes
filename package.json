@@ -2,28 +2,11 @@
   "name": "eslint-config-udes",
   "version": "0.3.0",
   "description": "ESLint shareable config for the UdeS JavaScript style guide",
-  "main": "index.js",
-  "scripts": {
-    "format": "eslint . --ext js,json,md --fix",
-    "lint": "eslint . --ext js,json,md"
-  },
-  "files": [
-    "index.js",
-    "node-8.js",
-    "polymer-2.js",
-    "polymer-2-application.js",
-    "polymer-2-element.js",
-    "react.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/UdeS-STI/eslint-config-udes.git"
-  },
   "keywords": [
     "check",
     "checker",
-    "code style",
     "code",
+    "code style",
     "enforce",
     "eslint",
     "eslintconfig",
@@ -40,18 +23,43 @@
     "validate",
     "verify"
   ],
-  "author": "Université de Sherbrooke",
-  "license": "MIT",
+  "homepage": "https://github.com/UdeS-STI/eslint-config-udes#readme",
   "bugs": {
     "url": "https://github.com/UdeS-STI/eslint-config-udes/issues"
   },
-  "homepage": "https://github.com/UdeS-STI/eslint-config-udes#readme",
-  "dependencies": {
-    "eslint": "^5.6.1",
-    "eslint-config-google": "^0.10.0",
-    "eslint-plugin-html": "^5.0.0",
-    "eslint-plugin-json": "^1.2.1",
-    "eslint-plugin-markdown": "^1.0.0-beta.6",
-    "eslint-plugin-react": "^7.11.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UdeS-STI/eslint-config-udes.git"
+  },
+  "license": "MIT",
+  "author": "Université de Sherbrooke",
+  "files": [
+    "index.js",
+    "lit-html.js",
+    "node-12.js",
+    "react.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "format": "eslint . --ext js,json,md --fix",
+    "lint": "eslint . --ext js,json,md"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-markdown": "^1.0.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-formatter-gitlab": "^1.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-markdown": "^1.0.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^1.18.2"
   }
 }

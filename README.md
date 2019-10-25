@@ -11,54 +11,59 @@ ESLint shareable config for the UdeS JavaScript style guide.
 $ npm install eslint-config-udes --save-dev
 ```
 
-## Usage
+Our default export use `prettier` and some plugins. You should install theses dependencies as well:
+```bash
+$ npm install eslint prettier eslint-plugin-prettier eslint-plugin-json-format eslint-plugin-markdown --save-dev
+```
+
+## Usage (by default)
 - Add the extends attribute to your `.eslintrc.js`:
 
-```javacript
+```js
 module.exports = {
   // Extends the UdeS ESLint config
   extends: 'eslint-config-udes',
-  
+
   // Limit ESLint to a specific project
   root: true,
-}
+};
 ```
 
-- If you use one of the supported language/framework, you should use the corresponding extends:
-```
-  // Extends the UdeS ESLint config for Polymer 2 application
-  extends: 'eslint-config-udes/polymer-2-application',
-  
-  // Extends the UdeS ESLint config for Polymer 2 element
-  extends: 'eslint-config-udes/polymer-2-element',
-  
-  // Extends the UdeS ESLint config for Node.js 8 application
-  extends: 'eslint-config-udes/node-8',
-  
-  // Extends the UdeS ESLint config for React application and element
-  extends: 'eslint-config-udes/react',
-```
-
+### Scripts
 - Add the wanted scripts to your `package.json`:
-
 ```json
 { 
   "scripts": {
-    "format": "npm-run-all format:*",
-    "format:js": "eslint . --ext js --fix",
-    "format:json": "eslint . --ext json --fix",
-    "format:markdown": "eslint . --ext md --fix",
-    "lint": "npm-run-all lint:*",
-    "lint:js": "eslint . --ext js",
-    "lint:json": "eslint . --ext json",
-    "lint:markdown": "eslint . --ext md"
+    "format": "eslint . --ext js,json,md --fix",
+    "lint": "eslint . --ext js,json,md"
   }
 }
 ```
 
-- If you use the `npm-run-all` module, don't forget to add it to your devDependencies:
+### Supported languages/frameworks
+- If you use one of the supported language/framework, you should use the corresponding extends in your `.eslintrc.js`:
+```js
+module.exports = {
+  // Extends the UdeS ESLint config for lit-html application
+  extends: 'eslint-config-udes/lit-html',
+
+  // Extends the UdeS ESLint config for Node.js 12 application
+  extends: 'eslint-config-udes/node-12',
+
+  // Extends the UdeS ESLint config for React application and element
+  extends: 'eslint-config-udes/react',
+};
+```
+
+#### Installation
+As these extends use other plugins, you may need to install additionnal devDependencies:
+
 ```bash
-npm install npm-run-all --save-dev
+  # lit-html
+  $ npm install babel-eslint eslint-plugin-html eslint-plugin-lit --save-dev
+
+  # React
+  $ npm install eslint-plugin-react --save-dev
 ```
 
 ## License
