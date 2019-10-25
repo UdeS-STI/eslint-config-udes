@@ -41,7 +41,7 @@ module.exports = {
 module.exports = {
   // Extends the UdeS ESLint config for lit-html application
   extends: 'eslint-config-udes/lit-html',
-  
+
   // Extends the UdeS ESLint config for Polymer 2 application
   extends: 'eslint-config-udes/polymer-2',
 
