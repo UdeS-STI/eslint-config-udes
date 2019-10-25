@@ -11,6 +11,11 @@ ESLint shareable config for the UdeS JavaScript style guide.
 $ npm install eslint-config-udes --save-dev
 ```
 
+Our default export use some plugins that you need to install as well:
+```bash
+$ npm install prettier eslint-plugin-prettier eslint-plugin-json-format eslint-plugin-markdown --save-dev
+```
+
 ## Usage (by default)
 - Add the extends attribute to your `.eslintrc.js`:
 
