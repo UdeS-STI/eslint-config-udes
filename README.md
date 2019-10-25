@@ -11,11 +11,6 @@ ESLint shareable config for the UdeS JavaScript style guide.
 $ npm install eslint-config-udes --save-dev
 ```
 
-Our default export use `prettier` and some plugins. You should install theses dependencies as well:
-```bash
-$ npm install eslint prettier eslint-plugin-prettier eslint-plugin-json-format eslint-plugin-markdown --save-dev
-```
-
 ## Usage (by default)
 - Add the extends attribute to your `.eslintrc.js`:
 
@@ -46,6 +41,9 @@ module.exports = {
 module.exports = {
   // Extends the UdeS ESLint config for lit-html application
   extends: 'eslint-config-udes/lit-html',
+  
+  // Extends the UdeS ESLint config for Polymer 2 application
+  extends: 'eslint-config-udes/polymer-2',
 
   // Extends the UdeS ESLint config for Node.js 12 application
   extends: 'eslint-config-udes/node-12',
@@ -61,6 +59,9 @@ As these extends use other plugins, you may need to install additionnal devDepen
 ```bash
   # lit-html
   $ npm install babel-eslint eslint-plugin-html eslint-plugin-lit --save-dev
+  
+  # Polymer 2
+  $ npm install eslint-plugin-html --save-dev
 
   # React
   $ npm install eslint-plugin-react --save-dev
