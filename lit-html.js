@@ -1,10 +1,11 @@
 module.exports = {
+  // Defines global variables that are predefined
   env: {
     // Browser global variables
     browser: true,
   },
 
-  // Extends ESLint configs
+  // Extends the UdeS ESLint config
   extends: ['./index.js'],
 
   // Parser (by default espree)
@@ -33,20 +34,6 @@ module.exports = {
 
   // Custom rules
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        // Include parentheses around a sole arrow function parameter | a => ... | (a) => ...
-        arrowParens: 'always',
-
-        // Use single quotes instead of double quotes
-        singleQuote: true,
-
-        // Print trailing commas wherever possible when multi-line, where valid in ES5 (objects, arrays, etc.)
-        trailingComma: 'es5',
-      },
-    ],
-
     // Disallows unencoded HTML entities in attribute values | > | &gt;
     'lit/attribute-value-entities': 'off',
 

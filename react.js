@@ -1,7 +1,4 @@
 module.exports = {
-  // Extends the UdeS ESLint config
-  extends: ['./index.js'],
-
   // Defines global variables that are predefined
   env: {
     // Browser global variables
@@ -10,6 +7,9 @@ module.exports = {
     // Node.js global variables and Node.js scoping
     node: true,
   },
+
+  // Extends the UdeS ESLint config
+  extends: ['./index.js'],
 
   // Use of third-party plugins
   plugins: ['eslint-plugin-react'],
