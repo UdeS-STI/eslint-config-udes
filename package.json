@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udes",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "ESLint shareable config for the UdeS JavaScript style guide",
   "keywords": [
     "check",
@@ -66,8 +66,8 @@
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.2.3",
-    "lint-staged": "^10.0.8",
-    "prettier": "^1.19.1"
+    "lint-staged": "^10.1.0",
+    "prettier": "^2.0.2"
   },
   "peerDependencies": {
     "eslint-formatter-gitlab": "^1.1.0",
@@ -77,6 +77,6 @@
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.2"
   }
 }
