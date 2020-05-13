@@ -1,7 +1,7 @@
 # eslint-config-udes
 
 [![CircleCI](https://circleci.com/gh/UdeS-STI/eslint-config-udes.svg?style=svg)](https://circleci.com/gh/UdeS-STI/eslint-config-udes)
-[![Greenkeeper badge](https://badges.greenkeeper.io/UdeS-STI/eslint-config-udes.svg)](https://greenkeeper.io/)
+
 [![npm](https://img.shields.io/npm/v/eslint-config-udes.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-udes)
 
 ESLint shareable config for the UdeS JavaScript style guide.
