@@ -1,8 +1,6 @@
 module.exports = {
   // Extends the UdeS ESLint config
-  extends: [
-    './index.js',
-  ],
+  extends: ['./index.js'],
 
   // Defines global variables that are predefined
   env: {
