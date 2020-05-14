@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udes",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "ESLint shareable config for the UdeS JavaScript style guide",
   "keywords": [
     "check",
@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0"
+    "eslint": "^7.0.0"
   },
   "devDependencies": {
     "eslint-plugin-json-format": "^2.0.1",
