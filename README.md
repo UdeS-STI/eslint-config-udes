@@ -1,22 +1,25 @@
 # eslint-config-udes
 
-[![CircleCI](https://circleci.com/gh/UdeS-STI/eslint-config-udes.svg?style=svg)](https://circleci.com/gh/UdeS-STI/eslint-config-udes)
-
 [![npm](https://img.shields.io/npm/v/eslint-config-udes.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-udes)
+[![Known Vulnerabilities](https://snyk.io/test/github/UdeS-STI/eslint-config-udes/badge.svg)](https://snyk.io/test/github/UdeS-STI/eslint-config-udes)
+[![CircleCI](https://circleci.com/gh/UdeS-STI/eslint-config-udes.svg?style=svg)](https://circleci.com/gh/UdeS-STI/eslint-config-udes)
 
 ESLint shareable config for the UdeS JavaScript style guide.
 
 ## Installation
+
 ```bash
 $ npm install eslint-config-udes --save-dev
 ```
 
 Our default export use some plugins that you need to install as well:
+
 ```bash
 $ npm install prettier eslint-plugin-prettier eslint-plugin-json-format eslint-plugin-markdown --save-dev
 ```
 
 ## Usage (by default)
+
 - Add the extends attribute to your `.eslintrc.js`:
 
 ```js
@@ -30,9 +33,11 @@ module.exports = {
 ```
 
 ### Scripts
+
 - Add the wanted scripts to your `package.json`:
+
 ```json
-{ 
+{
   "scripts": {
     "format": "eslint . --ext js,json,md --fix",
     "lint": "eslint . --ext js,json,md"
@@ -41,7 +46,9 @@ module.exports = {
 ```
 
 ### Supported languages/frameworks
+
 - If you use one of the supported language/framework, you should use the corresponding extends in your `.eslintrc.js`:
+
 ```js
 module.exports = {
   // Extends the UdeS ESLint config for lit-html application
@@ -59,12 +66,13 @@ module.exports = {
 ```
 
 #### Installation
+
 As these extends use other plugins, you may need to install additionnal devDependencies:
 
 ```bash
   # lit-html
   $ npm install babel-eslint eslint-plugin-html eslint-plugin-lit --save-dev
-  
+
   # Polymer 2
   $ npm install eslint-plugin-html --save-dev
 
@@ -72,7 +80,21 @@ As these extends use other plugins, you may need to install additionnal devDepen
   $ npm install eslint-plugin-react --save-dev
 ```
 
+## Publish
+
+Increment the `version` defined in the `package.json` file and run the command below to publish the module in the
+registry:
+
+```bash
+# Dry run
+npm publish --dry-run
+
+# For real (are you really sure?)
+npm publish
+```
+
 ## License
+
 The [MIT License][1] (MIT)
 
 [1]: https://opensource.org/licenses/MIT
