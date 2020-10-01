@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udes",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "ESLint shareable config for the UdeS JavaScript style guide",
   "keywords": [
     "check",
@@ -38,6 +38,7 @@
     "index.js",
     "lit-html.js",
     "node-12.js",
+    "node-14.js",
     "polymer-2.js",
     "react.js"
   ],
@@ -58,26 +59,26 @@
   "prettier": "prettier-config-udes",
   "dependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.7.0",
+    "eslint": "^7.10.0",
     "prettier-config-udes": "0.0.4"
   },
   "devDependencies": {
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.5"
+    "prettier": "^2.1.2"
   },
   "peerDependencies": {
     "eslint-formatter-gitlab": "^2.0.0",
-    "eslint-plugin-html": "^6.0.3",
+    "eslint-plugin-html": "^6.1.0",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-lit": "^1.2.2",
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.6",
-    "prettier": "^2.0.5"
+    "eslint-plugin-react": "^7.21.2",
+    "prettier": "^2.1.2"
   }
 }
