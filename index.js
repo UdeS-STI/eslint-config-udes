@@ -1,6 +1,15 @@
 const prettierConfigUdeS = require('prettier-config-udes');
 
 module.exports = {
+  overrides: [
+    {
+      // Explicitly apply eslint-plugin-markdown's `markdown`
+      // processor on any Markdown files we want to lint
+      files: ['**/*.md'],
+      processor: 'markdown/markdown',
+    },
+  ],
+
   // Supported JavaScript language options
   parserOptions: {
     // Enables ES6/ES2015 syntax
