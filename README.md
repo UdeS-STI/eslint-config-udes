@@ -22,7 +22,7 @@ $ npm install prettier eslint-plugin-prettier eslint-plugin-json-format eslint-p
 
 - Add the extends attribute to your `.eslintrc.js`:
 
-```js
+```javascript
 module.exports = {
   // Extends the UdeS ESLint config
   extends: 'eslint-config-udes',
@@ -49,7 +49,7 @@ module.exports = {
 
 - If you use one of the supported language/framework, you should use the corresponding extends in your `.eslintrc.js`:
 
-```js
+```javascript
 module.exports = {
   // Extends the UdeS ESLint config for lit-html application
   extends: 'eslint-config-udes/lit-html',
