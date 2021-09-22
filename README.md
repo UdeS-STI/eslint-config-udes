@@ -9,13 +9,13 @@ ESLint shareable config for the UdeS JavaScript style guide.
 ## Installation
 
 ```bash
-$ npm install eslint-config-udes --save-dev
+npm install eslint-config-udes --save-dev
 ```
 
 Our default export use some plugins that you need to install as well:
 
 ```bash
-$ npm install prettier eslint-plugin-prettier eslint-plugin-json-format eslint-plugin-markdown --save-dev
+npm install prettier eslint-plugin-prettier eslint-plugin-json-format eslint-plugin-markdown --save-dev
 ```
 
 ## Usage (by default)
@@ -70,14 +70,14 @@ module.exports = {
 As these extends use other plugins, you may need to install additionnal devDependencies:
 
 ```bash
-  # lit-html
-  $ npm install babel-eslint eslint-plugin-html eslint-plugin-lit --save-dev
+# lit-html
+npm install babel-eslint eslint-plugin-html eslint-plugin-lit --save-dev
 
-  # Polymer 2
-  $ npm install eslint-plugin-html --save-dev
+# Polymer 2
+npm install eslint-plugin-html --save-dev
 
-  # React
-  $ npm install eslint-plugin-react --save-dev
+# React
+npm install eslint-plugin-react --save-dev
 ```
 
 ## Publish
