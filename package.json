@@ -37,7 +37,6 @@
   "files": [
     "index.js",
     "lit-html.js",
-    "node-12.js",
     "node-14.js",
     "node-16.js",
     "react.js"
