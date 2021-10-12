@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udes",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "ESLint shareable config for the UdeS JavaScript style guide",
   "keywords": [
     "check",
@@ -37,9 +37,8 @@
   "files": [
     "index.js",
     "lit-html.js",
-    "node-12.js",
     "node-14.js",
-    "polymer-2.js",
+    "node-16.js",
     "react.js"
   ],
   "scripts": {

@@ -39,7 +39,7 @@ module.exports = {
 ```json
 {
   "scripts": {
-    "format": "eslint . --ext js,json,md --fix",
+    "format": "npm run lint -- --fix",
     "lint": "eslint . --ext js,json,md"
   }
 }
@@ -54,11 +54,8 @@ module.exports = {
   // Extends the UdeS ESLint config for lit-html application
   extends: 'eslint-config-udes/lit-html',
 
-  // Extends the UdeS ESLint config for Polymer 2 application
-  extends: 'eslint-config-udes/polymer-2',
-
-  // Extends the UdeS ESLint config for Node.js 12 application
-  extends: 'eslint-config-udes/node-12',
+  // Extends the UdeS ESLint config for Node.js 16 application
+  extends: 'eslint-config-udes/node-16',
 
   // Extends the UdeS ESLint config for React application and element
   extends: 'eslint-config-udes/react',
@@ -67,14 +64,11 @@ module.exports = {
 
 #### Installation
 
-As these extends use other plugins, you may need to install additionnal devDependencies:
+As these configurations use other plugins, you may need to install additional devDependencies:
 
 ```bash
 # lit-html
 npm install babel-eslint eslint-plugin-html eslint-plugin-lit --save-dev
-
-# Polymer 2
-npm install eslint-plugin-html --save-dev
 
 # React
 npm install eslint-plugin-react --save-dev
